@@ -1,0 +1,12 @@
+﻿<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="STELLA.FlightDataset"
+  DTS:DTSID="{7F7A6C98-F91D-4368-A8B7-6F523084B277}"
+  DTS:CreationName="OLEDB">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectRetryCount="1"
+      DTS:ConnectRetryInterval="5"
+      DTS:ConnectionString="Data Source=STELLA;Initial Catalog=FlightDataset;Provider=SQLNCLI11.1;Integrated Security=SSPI;Application Name=SSIS-Integration Services Project1-{7F7A6C98-F91D-4368-A8B7-6F523084B277}STELLA.FlightDataset;Auto Translate=False;" />
+  </DTS:ObjectData>
+</DTS:ConnectionManager>

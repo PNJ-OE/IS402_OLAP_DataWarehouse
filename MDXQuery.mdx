@@ -1,0 +1,64 @@
+-- cau 1 
+ SELECT NON EMPTY { [Measures].[Total Delay], [Measures].[Dep Delay], [Measures].[Arr Delay] } ON COLUMNS, 
+ NON EMPTY { ([Dim Date].[Month].[Month].ALLMEMBERS ) } DIMENSION 
+ PROPERTIES MEMBER_CAPTION, 
+ MEMBER_UNIQUE_NAME ON ROWS 
+ FROM [Flight Delay] 
+ --cau 2
+  SELECT NON EMPTY { [Measures].[Total Delay], [Measures].[Distance] } ON COLUMNS, 
+NON EMPTY { ([Dim Airport].[Origin].[Origin].ALLMEMBERS * [Dim Airport].[Dest].[Dest].ALLMEMBERS * [Dim Airport].[Org Airport].[Org Airport].ALLMEMBERS * [Dim Airport].[Dest Airport].[Dest Airport].ALLMEMBERS ) } DIMENSION PROPERTIES MEMBER_CAPTION, MEMBER_UNIQUE_NAME ON ROWS 
+FROM [Flight Delay] 
+--cau 3
+ SELECT NON EMPTY { [Measures].[Total Delay], [Measures].[Distance], [Measures].[Total Time] } ON COLUMNS, 
+ NON EMPTY { ([Dim Flight].[Unique Carrier].[Unique Carrier].ALLMEMBERS ) } DIMENSION PROPERTIES MEMBER_CAPTION, MEMBER_UNIQUE_NAME ON ROWS 
+ FROM [Flight Delay] 
+ --cau 4
+  SELECT NON EMPTY { [Measures].[Total Delay], [Measures].[Distance], [Measures].[Total Time] } ON COLUMNS, NON EMPTY { ([Dim Date].[Day Of Week].[Day Of Week].&[6] * [Dim Flight].[Airline].[Airline].allmembers),([Dim Date].[Day Of Week].[Day Of Week].&[7] * [Dim Flight].[Airline].[Airline].allmembers) } DIMENSION PROPERTIES MEMBER_CAPTION, MEMBER_UNIQUE_NAME ON ROWS
+  FROM [Flight Delay]
+--cau 5
+SELECT 
+	MEASURES.[DISTANCE] ON COLUMNS,
+FILTER (
+	[DIM FLIGHT].[FLIGHT NUM].MEMBERS,
+	(MEASURES.[TOTAL DELAY]>120)
+	) ON ROWS
+FROM [FLIGHT DELAY]
+--cau 6
+ SELECT NON EMPTY { [Measures].[Ucontrollable Delay], [Measures].[Controllable Delay], [Measures].[Ground Delay] } ON COLUMNS, NON EMPTY { ([Dim Date].[Day Of Week].[Day Of Week].ALLMEMBERS ) } DIMENSION PROPERTIES MEMBER_CAPTION, MEMBER_UNIQUE_NAME ON ROWS FROM [Flight Delay] 
+--cau 7
+ SELECT NON EMPTY { [Measures].[Dep Delay], [Measures].[Arr Delay] } ON COLUMNS, NON EMPTY { ([Dim Date].[Day Of Week].[Day Of Week].ALLMEMBERS * [Dim Flight].[Unique Carrier].[Unique Carrier].ALLMEMBERS * [Dim Flight].[Flight Num].[Flight Num].ALLMEMBERS ) } DIMENSION PROPERTIES MEMBER_CAPTION, MEMBER_UNIQUE_NAME ON ROWS FROM [Flight Delay] WHERE [DIM DATE].[DATE].[2019-04-06]
+ --CAU 8
+	SELECT NON EMPTY {[Measures].[TOTAL DELAY], [MEASURES].[TOTAL TIME], [MEASURES].[ARR DELAY],
+	[MEASURES].[DEP DELAY], [MEASURES].[DISTANCE]} ON COLUMNS
+	FROM [FLIGHT DELAY] 
+	WHERE ([DIM AIRPORT].[ORIGIN].[ORIGIn].&[LAX],[DIM AIRPORT].[DEST].[DEST].&[DFW])
+--cau 9
+WITH 
+  SET Top10Flights AS
+    TOPCOUNT(
+      [DIM Flight].[Flight NUM].[Flight NUM].MEMBERS,
+      10,
+      [Measures].[Ground Delay]
+    )
+SELECT 
+  {
+    [Measures].[Total Delay],
+    [Measures].[Ground Delay],
+    [Measures].[Arr Delay],
+    [Measures].[Dep Delay]
+  } ON COLUMNS,
+  NON EMPTY Top10Flights ON ROWS
+FROM 
+  [Flight Delay]
+  --cau 10
+ WITH 
+ MEMBER [MEASURES].[FLIGHTCOUNT] AS 
+ COUNT ([DIM FLIGHT].[FLIGHT ID].[FLIGHT ID].MEMBERS)
+ MEMBER [MEASURES].[AVERAGEDELAY] AS 
+ IIF([MEASURES].[FLIGHTCOUNT]>0,[MEASURES].[TOTAL DELAY]/[MEASURES].[FLIGHTCOUNT],
+ NULL)
+ MEMBER [MEASURES].[DELAYPERCENTAGE] AS 
+ IIF([MEASURES].[TOTAL TIME] >0, ([MEASURES].[TOTAL DELAY] * 100)/[MEASURES].[TOTAL TIME], NULL)
+ SELECT NON EMPTY {[MEASURES].[TOTAL DELAY],[MEASURES].[AVERAGEDELAY],
+ [MEASURES].[DELAYPERCENTAGE]} ON COLUMNS, NON EMPTY {([DIM DATE].[MONTH].[MONTH].ALLMEMBERS)} ON ROWS 
+ FROM [FLIGHT DELAY]

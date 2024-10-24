@@ -1,0 +1,380 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="9d5fc4dd-3d10-4aae-867a-7c077c6da233" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Dim Time</ID>
+  <Name>Dim Time</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-1134" scrolltop="-6128" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="8657" y="15642" backcolor="2039583" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="010000009001b0300100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Dim_Time" left="-361" top="-445" logicalid="2" controlid="1" masterid="0" hint1="0" hint2="0" width="3641" height="3387" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000390e00003b0d0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_Dim_Time" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-1134</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-6128</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>-361</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>-445</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ARDiagramLayout</Name>
+      <Value>
+        <DiagramLayout ZoomPercent="100" ViewPortX="0" ViewPortY="0" xmlns="">
+          <Shapes NodeWidth="181">
+            <Shape Id="Time Id" Expanded="true">
+              <Attributes>
+                <Attribute Id="Time Id" />
+                <Attribute Id="Actual Elapsed Time" />
+                <Attribute Id="Airtime" />
+                <Attribute Id="Arr Time" />
+                <Attribute Id="CRS Arr Time" />
+                <Attribute Id="CRS Elapsed Time" />
+                <Attribute Id="Dep Time" />
+              </Attributes>
+              <Position x="20" y="20" />
+            </Shape>
+            <Shape Id="Dep Time Hour" Expanded="true">
+              <Attributes>
+                <Attribute Id="Dep Time Hour" />
+                <Attribute Id="Dep Time Minute" />
+              </Attributes>
+              <Position x="251" y="20" />
+            </Shape>
+            <Shape Id="Arr Time Hour" Expanded="true">
+              <Attributes>
+                <Attribute Id="Arr Time Hour" />
+                <Attribute Id="Arr Time Minute" />
+              </Attributes>
+              <Position x="251" y="94" />
+            </Shape>
+            <Shape Id="CRS Arr Time Hour" Expanded="true">
+              <Attributes>
+                <Attribute Id="CRS Arr Time Hour" />
+                <Attribute Id="CRS Arr Time Minute" />
+              </Attributes>
+              <Position x="251" y="168" />
+            </Shape>
+          </Shapes>
+        </DiagramLayout>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="59670795-f4f8-49e6-ac7a-c47fd4f81b8e">
+    <DataSourceViewID>Flight Delay</DataSourceViewID>
+  </Source>
+  <UnknownMember>Visible</UnknownMember>
+  <ErrorConfiguration dwd:design-time-name="ece39d8c-9425-4bac-a3ce-4dd17c7ddf17">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="4c6a7610-2d2d-45d4-882e-b4be54ae9d82">
+      <ID>Time Id</ID>
+      <Name>Time Id</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="e9b6296c-c974-45fd-b9b9-7fbb14d1fb83">
+          <DataType>Integer</DataType>
+          <NullProcessing>UnknownMember</NullProcessing>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="b7b1ec67-4f53-4bea-8eb7-9d9257d8fc05">
+            <TableID>dbo_Dim_Time</TableID>
+            <ColumnID>Time_id</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="aa5c2f91-104d-44b9-b264-21fe40fac959">
+          <AttributeID>Airtime</AttributeID>
+          <Name>Airtime</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="715db269-aaf9-4848-b8be-3bab72faa87a">
+          <AttributeID>CRS Elapsed Time</AttributeID>
+          <Name>CRS Elapsed Time</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="447a414c-d153-45f1-b6ef-42fdb07a0cb5">
+          <AttributeID>CRS Arr Time</AttributeID>
+          <Name>CRS Arr Time</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="2af8bc48-33ea-4038-91ba-a47e3a2f313a">
+          <AttributeID>Actual Elapsed Time</AttributeID>
+          <Name>Actual Elapsed Time</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="512baea8-47f3-4940-b350-87120d1601ad">
+          <AttributeID>Arr Time</AttributeID>
+          <Name>Arr Time</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="d03a4891-8ff9-4f2e-b4ff-034d9c2b3715">
+          <AttributeID>Dep Time</AttributeID>
+          <Name>Dep Time</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="f76be9e9-1085-441b-9170-699982e9b3a9">
+          <AttributeID>CRS Arr Time Hour</AttributeID>
+          <Name>CRS Arr Time Hour</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="e2751e9a-9851-45a4-8104-8af7200a1e09">
+          <AttributeID>Arr Time Hour</AttributeID>
+          <Name>Arr Time Hour</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="ce6fa34f-262c-489a-bc35-0d48554ad019">
+          <AttributeID>Dep Time Hour</AttributeID>
+          <Name>Dep Time Hour</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="9194d66b-cb2e-47b3-8a28-bb5dbfff1dd1">
+      <ID>Airtime</ID>
+      <Name>Airtime</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="91863350-085c-4f03-9fba-7649cba643e2">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="aaad5440-eff3-47c7-a188-4aa5ac5a852f">
+            <TableID>dbo_Dim_Time</TableID>
+            <ColumnID>Airtime</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="328e5ffc-139f-4384-86c9-823166bcb06f">
+      <ID>CRS Arr Time</ID>
+      <Name>CRS Arr Time</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="b9f2e82c-5ac9-4cee-94be-9b9836dc4646">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="3a4a1c35-a813-4d08-a403-6bbbdbbf8880">
+            <TableID>dbo_Dim_Time</TableID>
+            <ColumnID>CRSArrTime</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="542f6a2e-3379-4b17-a6bd-5dcfefbcff6b">
+      <ID>CRS Elapsed Time</ID>
+      <Name>CRS Elapsed Time</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="8e6e44b5-3d74-4d17-9ad0-2e075c1c1491">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="924ffbda-0b70-4123-a164-d785def3c1a4">
+            <TableID>dbo_Dim_Time</TableID>
+            <ColumnID>CRSElapsedTime</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="fdb6c90a-4f7e-4dca-bda4-b77dc7d9abc5">
+      <ID>Actual Elapsed Time</ID>
+      <Name>Actual Elapsed Time</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="afeb0767-e2c4-4d37-9fa5-83061ef41a3c">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="dcfe893b-7b27-4197-a28a-000052d35b5c">
+            <TableID>dbo_Dim_Time</TableID>
+            <ColumnID>ActualElapsedTime</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="b25d9afe-e330-4344-8fbd-444b6a4d58e5">
+      <ID>Arr Time</ID>
+      <Name>Arr Time</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="8d9926cb-79c6-4a4f-8834-f0eac90bc28a">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="c3e7253e-c0d5-448a-aa88-50ed64212f63">
+            <TableID>dbo_Dim_Time</TableID>
+            <ColumnID>ArrTime</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="71f32bdf-15c9-4830-97a8-e6b77c7688ba">
+      <ID>Dep Time</ID>
+      <Name>Dep Time</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="ee141901-cdeb-4e3f-a262-1837d68a35ed">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="e494687e-ea94-4d5c-a773-eba4755e7f48">
+            <TableID>dbo_Dim_Time</TableID>
+            <ColumnID>DepTime</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="67708c8d-5634-408d-85a7-5c447903ac86">
+      <ID>Arr Time Hour</ID>
+      <Name>Arr Time Hour</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="9bf43a21-1f73-4f37-a7e9-565a3a6b09c5">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="6085bff8-cd5c-4326-aaca-23f624c17bde">
+            <TableID>dbo_Dim_Time</TableID>
+            <ColumnID>ArrTime_Hour</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="00a6de6f-67c4-43da-bbd6-bc78290d6177">
+          <AttributeID>Arr Time Minute</AttributeID>
+          <Name>Arr Time Minute</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="ee0c3a1f-dac7-4a4d-b206-48f2168e7f7f">
+      <ID>Arr Time Minute</ID>
+      <Name>Arr Time Minute</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="cce31a7d-b2e2-45df-801f-77916a16fd55">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ea7bc4c3-2cf7-46ff-bcdc-4787e74f82bf">
+            <TableID>dbo_Dim_Time</TableID>
+            <ColumnID>ArrTime_Minute</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="52a5f20a-d05d-4549-8d4d-42906b014315">
+      <ID>Dep Time Hour</ID>
+      <Name>Dep Time Hour</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="447b0693-4290-4749-bc37-49f9f475a138">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="3ed1ea03-0994-44d3-b404-1423d3fe579b">
+            <TableID>dbo_Dim_Time</TableID>
+            <ColumnID>DepTime_Hour</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="ff7f7d54-1961-4466-962f-64aa0e943ca3">
+          <AttributeID>Dep Time Minute</AttributeID>
+          <Name>Dep Time Minute</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="f7dbac30-4214-4d07-a839-49715577041d">
+      <ID>Dep Time Minute</ID>
+      <Name>Dep Time Minute</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="b7373b33-3db9-4b0b-8d84-eeb78176a425">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="40f82844-25cb-48e7-9458-cef86b810d42">
+            <TableID>dbo_Dim_Time</TableID>
+            <ColumnID>DepTime_Minute</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="a0956c2d-ec5d-4fa7-97db-86cfc8adf485">
+      <ID>CRS Arr Time Hour</ID>
+      <Name>CRS Arr Time Hour</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="d7c0a940-aa13-4553-9fd8-7877d313eb0e">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="4ed0afb8-a03f-4b43-bea7-bf0e69be059b">
+            <TableID>dbo_Dim_Time</TableID>
+            <ColumnID>CRSArrTime_Hour</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="659f1f6f-4779-47c1-8f76-53a9a6d3d82c">
+          <AttributeID>CRS Arr Time Minute</AttributeID>
+          <Name>CRS Arr Time Minute</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="aa49f26d-9854-4dd7-9a8d-30d38eada79c">
+      <ID>CRS Arr Time Minute</ID>
+      <Name>CRS Arr Time Minute</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="c74df5e5-d247-4a8f-8c02-1cf1e40384b1">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="7b0bd0e5-42ea-47d8-b5e0-30f003c86f70">
+            <TableID>dbo_Dim_Time</TableID>
+            <ColumnID>CRSArrTime_Minute</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>

@@ -1,0 +1,237 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="359e5eb3-67c3-4b53-94cf-aa7e9589da0e" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Dim Delay</ID>
+  <Name>Dim Delay</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-1261" scrolltop="-5948" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="5948" y="15642" backcolor="2039583" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="010000009001b0300100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Dim_Delay" left="-382" top="-2434" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="3387" height="3747" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e00003b0d0000a30e0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_Dim_Delay" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-1261</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-5948</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>-382</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>-2434</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="fc9e2650-ef50-4e6b-9ade-6f5d32981166">
+    <DataSourceViewID>Flight Delay</DataSourceViewID>
+  </Source>
+  <UnknownMember>Visible</UnknownMember>
+  <ErrorConfiguration dwd:design-time-name="cba03c62-dabb-4b00-ac48-d650efea67d6">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="4774c74e-c3ab-4a10-ad5b-3af0e5b2c2df">
+      <ID>Delay Key</ID>
+      <Name>Delay Key</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="0c93d636-fc9f-4f73-8229-c365830b0912">
+          <DataType>Integer</DataType>
+          <NullProcessing>UnknownMember</NullProcessing>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="b8883ac2-055d-440a-b157-3dbf93dd6c04">
+            <TableID>dbo_Dim_Delay</TableID>
+            <ColumnID>Delay_Key</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="9d3b919b-c57f-48af-ad14-93c7cbe7aec7">
+          <AttributeID>Taxi Out</AttributeID>
+          <Name>Taxi Out</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="648a63e7-10f4-4b4a-9dc9-27bc4463ba86">
+          <AttributeID>Taxi In</AttributeID>
+          <Name>Taxi In</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="43dd1779-59c1-4393-9991-bdc33db5f588">
+          <AttributeID>Late Aircraft Delay</AttributeID>
+          <Name>Late Aircraft Delay</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="3ab60261-5b5a-4fc4-b759-20e8a8f8d002">
+          <AttributeID>Security Delay</AttributeID>
+          <Name>Security Delay</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="42107d1d-bacb-4985-a719-e17e393ffbbe">
+          <AttributeID>NAS Delay</AttributeID>
+          <Name>NAS Delay</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="fa209a5c-0174-4ce8-9aec-d3b0fad516d5">
+          <AttributeID>Weather Delay</AttributeID>
+          <Name>Weather Delay</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="8d45081a-ba76-4bf2-a63b-f21f5105f94e">
+          <AttributeID>Carrier Delay</AttributeID>
+          <Name>Carrier Delay</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="def10132-9f05-475d-9080-323265b86c84">
+      <ID>Taxi Out</ID>
+      <Name>Taxi Out</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="47a4ef17-59ac-4cd2-a7ab-039105a84e30">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="3f01c23f-bfda-4dc5-8024-2e331a5f676b">
+            <TableID>dbo_Dim_Delay</TableID>
+            <ColumnID>TaxiOut</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="bbaa1e45-6f08-470b-810f-ff3ac0ff979d">
+      <ID>Taxi In</ID>
+      <Name>Taxi In</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="92b9c72d-dae9-48b4-8a3e-50334b051dda">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="77011b36-1d3a-43d2-8d79-7a87b58b1d12">
+            <TableID>dbo_Dim_Delay</TableID>
+            <ColumnID>TaxiIn</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="5f152ce7-4867-41bd-9b71-3de2a7adf2e9">
+      <ID>Late Aircraft Delay</ID>
+      <Name>Late Aircraft Delay</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="1ac7b045-2fb1-420f-b247-1ff78c181dd7">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ba1b7a65-ed35-4ff7-8786-12524ca0e23a">
+            <TableID>dbo_Dim_Delay</TableID>
+            <ColumnID>LateAircraftDelay</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="ec6c9763-2cbf-4da5-8dc8-11b6ec8b2b43">
+      <ID>Security Delay</ID>
+      <Name>Security Delay</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="1b269fe7-6f4a-43e2-acf3-e08212a01634">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="79ac61b3-bbde-43b0-b46a-4f50f34939fe">
+            <TableID>dbo_Dim_Delay</TableID>
+            <ColumnID>SecurityDelay</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="9876a9d9-0dd4-4588-9274-97499b5ea62a">
+      <ID>NAS Delay</ID>
+      <Name>NAS Delay</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="6cb2d729-d3ca-4661-8634-9687d565493c">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="0609f0ac-1441-4b08-8403-336f278700d1">
+            <TableID>dbo_Dim_Delay</TableID>
+            <ColumnID>NASDelay</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="c5b86ab7-a124-42b3-a121-aae0cb519745">
+      <ID>Weather Delay</ID>
+      <Name>Weather Delay</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="414559fd-7f18-41e6-ad2a-c1d46ce128e5">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="3ab615f0-f19c-4940-8ec2-ec8796c5cbed">
+            <TableID>dbo_Dim_Delay</TableID>
+            <ColumnID>WeatherDelay</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="49ae798a-717e-4212-9d68-c4842d5d49b8">
+      <ID>Carrier Delay</ID>
+      <Name>Carrier Delay</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="8c21cdf4-2714-4add-9fc3-b0683fc23be7">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="10bd74a2-3a67-4a04-95b5-48d360fb482f">
+            <TableID>dbo_Dim_Delay</TableID>
+            <ColumnID>CarrierDelay</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>

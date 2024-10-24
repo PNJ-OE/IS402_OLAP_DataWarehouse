@@ -1,0 +1,12 @@
+﻿<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="STELLA.FlightDelay"
+  DTS:DTSID="{6E16950B-1AD2-4F5D-9A07-FECE2B62623E}"
+  DTS:CreationName="OLEDB">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectRetryCount="1"
+      DTS:ConnectRetryInterval="5"
+      DTS:ConnectionString="Data Source=STELLA;Initial Catalog=FlightDelay;Provider=SQLNCLI11.1;Integrated Security=SSPI;Application Name=SSIS-Integration Services Project1-{6E16950B-1AD2-4F5D-9A07-FECE2B62623E}STELLA.FlightDelay;Auto Translate=False;" />
+  </DTS:ObjectData>
+</DTS:ConnectionManager>
